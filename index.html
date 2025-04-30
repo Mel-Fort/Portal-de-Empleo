@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal de Empleo con Videos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav><h1>Portal de Empleo con Presentaciones en Video</h1>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Empresas</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <main>
+    <section class="buscador">
+      <input type="text" id="filtro" placeholder="Buscar empleo por palabra clave..." onkeyup="filtrarOfertas()" />
+    </section>
+
+    <section id="ofertas">
+      <!-- Ofertas se generan dinámicamente con js-->
+    </section>
+
+    <section id="detalle" class="oculto">
+      <button onclick="volver()">⬅ Volver</button>
+      <div id="detalleContenido"></div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
